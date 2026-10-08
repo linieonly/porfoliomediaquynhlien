@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio của Hoàng Quỳnh Liên – Ứng tuyển Media / Video Editor Part-time, tập trung Quay dựng, Tư duy hình ảnh và Sáng tạo video ngắn." />
-    <title>Hoàng Quỳnh Liên — Media & Video Editor Portfolio</title>
+    <meta name="description" content="Portfolio của Hoàng Quỳnh Liên – ứng tuyển Booking Part-time, tập trung Content, Marketing, Đối ngoại và KOL/KOC." />
+    <title>Hoàng Quỳnh Liên — Booking & Marketing Portfolio</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -152,6 +152,18 @@
         }
         .floating-note small{display:block;color:var(--muted);font-size:11px;margin-bottom:3px}
         .floating-note strong{font-size:15px;line-height:1.35;display:block}
+
+        /* STRIP */
+        .impact-strip{
+            margin-top:20px;
+            display:grid;grid-template-columns:repeat(4,1fr);
+            border:1px solid var(--line);border-radius:22px;overflow:hidden;
+            background:rgba(255,255,255,.72);
+        }
+        .impact-item{padding:22px 20px;border-right:1px solid var(--line)}
+        .impact-item:last-child{border-right:0}
+        .impact-num{font-family:"Playfair Display",serif;font-size:34px;color:var(--wine);line-height:1;margin-bottom:7px}
+        .impact-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
 
         /* SECTION */
         section{padding:100px 0}
@@ -313,6 +325,10 @@
             section{padding:72px 0}
             h1{font-size:56px}
             .hero-copy{font-size:17px}
+            .impact-strip{grid-template-columns:1fr 1fr}
+            .impact-item{border-bottom:1px solid var(--line)}
+            .impact-item:nth-child(2){border-right:0}
+            .impact-item:nth-child(3),.impact-item:nth-child(4){border-bottom:0}
             .about-content,.work-grid,.cert-grid{grid-template-columns:1fr}
             .section-head{display:block}
             .section-intro{margin-top:12px}
@@ -333,10 +349,10 @@
             <nav class="nav-links">
                 <a href="#about">Về mình</a>
                 <a href="#experience">Kinh nghiệm</a>
-                <a href="#work">Dự án</a>
+                <a href="#work">Minh chứng</a>
                 <a href="#contact">Liên hệ</a>
             </nav>
-            <a class="nav-cta" href="/CV_Hoang_Quynh_Lien_EditorParttime_2.pdf" target="_blank">Xem CV</a>
+            <a class="nav-cta" href="assets/CV_Hoang_Quynh_Lien.pdf" target="_blank">Xem CV</a>
         </div>
     </header>
 
@@ -345,35 +361,57 @@
             <div class="wrap">
                 <div class="hero-grid">
                     <div class="reveal">
-                        <div class="eyebrow"><span class="eyebrow-dot"></span> Ứng tuyển Media / Video Editor Part-time</div>
-                        <h1>Kể câu chuyện thương hiệu qua từng <em>khung hình</em>.</h1>
+                        <div class="eyebrow"><span class="eyebrow-dot"></span> Ứng tuyển Booking Part-time</div>
+                        <h1>Gắn <em>ý tưởng</em> với đúng người, đúng câu chuyện.</h1>
                         <p class="hero-copy">
-                            Mình là <strong>Hoàng Quỳnh Liên</strong> — một bạn trẻ mang tinh thần <strong>cầu tiến, năng động, linh hoạt và sáng tạo</strong>. Với hơn 2 năm thực chiến làm nội dung đa phương tiện, mình đam mê lên ý tưởng, quay dựng video ngắn và nắm bắt nhịp điệu của các xu hướng mới.
+                            Mình là <strong>Hoàng Quỳnh Liên</strong> — sinh viên năng động, yêu thích
+                            <strong>Truyền thông – Marketing</strong>, kết hợp tư duy Phân tích kinh doanh với trải nghiệm thực chiến ở
+                            <strong>Nội dung, Đối ngoại và tổ chức dự án</strong>.
                         </p>
                         <p class="hero-sub">
-                            Mong muốn được đồng hành cùng môi trường Agency chuyên nghiệp; sẵn sàng phối hợp chặt chẽ với team Content, trực tiếp setup bối cảnh và hậu kỳ các video ngắn (TikTok, FB Reels) để đem lại hiệu quả truyền thông cao nhất.
+                            Mong muốn tham gia quá trình lên ý tưởng, brief, làm việc với KOL/KOC và theo sát hiệu quả truyền thông,
+                            đặc biệt trong môi trường F&amp;B hướng tới khách hàng trẻ.
                         </p>
 
                         <div class="hero-actions">
-                            <a class="btn btn-primary" href="#work">Xem dự án <span>↗</span></a>
-                            <a class="btn btn-secondary" href="/CV_Hoang_Quynh_Lien_EditorParttime_2.pdf" target="_blank">Mở CV <span>↗</span></a>
+                            <a class="btn btn-primary" href="#work">Xem minh chứng <span>↗</span></a>
+                            <a class="btn btn-secondary" href="assets/CV_Hoang_Quynh_Lien.pdf" target="_blank">Mở CV <span>↗</span></a>
                         </div>
 
                         <div class="hero-meta">
-                            <div class="meta-item"><span class="meta-bullet"></span> Quay & Dựng Video</div>
-                            <div class="meta-item"><span class="meta-bullet"></span> Tư duy Hình ảnh</div>
-                            <div class="meta-item"><span class="meta-bullet"></span> Sáng tạo Nội dung</div>
+                            <div class="meta-item"><span class="meta-bullet"></span> Content &amp; Marketing</div>
+                            <div class="meta-item"><span class="meta-bullet"></span> Đối ngoại &amp; Booking</div>
+                            <div class="meta-item"><span class="meta-bullet"></span> Phân tích kinh doanh</div>
                         </div>
                     </div>
 
                     <div class="hero-visual reveal">
                         <div class="hero-card">
-                            <img src="/avatar.jpg" alt="Hoàng Quỳnh Liên">
+                            <img src="assets/avatar.jpg" alt="Hoàng Quỳnh Liên">
                         </div>
                         <div class="floating-note">
                             <small>Định hướng</small>
-                            <strong>Video Editor · Media · Sáng Tạo Hình Ảnh</strong>
+                            <strong>Booking · Content · KOL/KOC · Marketing</strong>
                         </div>
+                    </div>
+                </div>
+
+                <div class="impact-strip reveal">
+                    <div class="impact-item">
+                        <div class="impact-num">12</div>
+                        <div class="impact-label">Thành viên từng điều phối</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-num">02</div>
+                        <div class="impact-label">Sự kiện lớn phụ trách đối ngoại</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-num">03+</div>
+                        <div class="impact-label">Nhóm hoạt động / dự án nổi bật</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-num">2024–28</div>
+                        <div class="impact-label">Phân tích kinh doanh</div>
                     </div>
                 </div>
             </div>
@@ -384,10 +422,11 @@
                 <div class="section-head reveal">
                     <div>
                         <div class="section-kicker">01 · Về mình</div>
-                        <h2 class="section-title">Một profile thiên về <em>hình ảnh</em> và nhịp điệu.</h2>
+                        <h2 class="section-title">Một profile thiên về <em>kết nối</em> và triển khai.</h2>
                     </div>
                     <p class="section-intro">
-                        Mình yêu thích sự sáng tạo không giới hạn qua những góc máy và những hiệu ứng cắt dựng nhịp nhàng. Mình luôn sẵn sàng học hỏi, thích ứng nhanh để biến mọi brief thành sản phẩm trọn vẹn.
+                        Mình thích những công việc nằm giữa sáng tạo và phối hợp: hiểu mục tiêu, xây dựng nội dung,
+                        kết nối đúng đối tác và biến kế hoạch thành đầu việc rõ ràng.
                     </p>
                 </div>
 
@@ -395,7 +434,7 @@
                     <div class="about-card reveal">
                         <h3>Điều mình mang vào công việc</h3>
                         <div class="quote">
-                            “Năng động tiếp thu xu hướng, linh hoạt trong cách làm việc nhóm và luôn cầu tiến để mỗi video sau đều chất lượng hơn video trước.”
+                            “Tư duy logic để hiểu bài toán, sự tinh tế để giao tiếp, và sự chủ động để theo tới cùng.”
                         </div>
                         <div class="signature">Quỳnh Liên</div>
                     </div>
@@ -403,23 +442,23 @@
                     <div class="about-content">
                         <div class="info-box reveal">
                             <h4>Học vấn</h4>
-                            <p>Đại học Thương Mại (2024–2028)</p>
-                            <p>THPT Chuyên Hà Giang (2021–2024)</p>
+                            <p>Đại học Thương mại (2024–2028)</p>
+                            <div class="tag-row"><span class="tag">Chuyên ngành Phân tích kinh doanh</span></div>
                         </div>
                         <div class="info-box reveal">
                             <h4>Định hướng</h4>
-                            <p>Phát triển chuyên sâu về Media: Video Editor, Quay chụp và Sản xuất Nội dung ngắn.</p>
+                            <p>Truyền thông – Marketing, đặc biệt là Content, Booking và Đối ngoại.</p>
                             <div class="tag-row">
-                                <span class="tag">Editor</span><span class="tag">TikTok/Reels</span><span class="tag">Media</span>
+                                <span class="tag">KOL/KOC</span><span class="tag">Content</span><span class="tag">Marketing</span>
                             </div>
                         </div>
                         <div class="info-box reveal">
-                            <h4>Kỹ năng chuyên môn</h4>
-                            <p>Dựng video ngắn (CapCut...), tư duy hình ảnh nhạy bén, biết cách setup ánh sáng và thiết bị quay chụp cơ bản.</p>
+                            <h4>Thế mạnh</h4>
+                            <p>Thiết kế kịch bản, timeline, phối hợp nhóm, liên hệ khách mời/đối tác và theo sát tiến độ.</p>
                         </div>
                         <div class="info-box reveal">
-                            <h4>Phẩm chất</h4>
-                            <p>Cầu tiến, năng động, linh hoạt. Rất đề cao tinh thần chủ động sáng tạo và khả năng phối hợp chặt chẽ với team Content.</p>
+                            <h4>Trải nghiệm F&amp;B</h4>
+                            <p>Trực tiếp làm Lễ tân &amp; Barista, hiểu khẩu vị và thói quen tiêu dùng của tệp khách hàng trẻ.</p>
                         </div>
                     </div>
                 </div>
@@ -431,10 +470,10 @@
                 <div class="section-head reveal">
                     <div>
                         <div class="section-kicker">02 · Kinh nghiệm</div>
-                        <h2 class="section-title">Thực chiến từ <em>Nội dung</em> đến Media.</h2>
+                        <h2 class="section-title">Từ <em>nội dung</em> đến vận hành dự án.</h2>
                     </div>
                     <p class="section-intro">
-                        Quá trình gắn bó với các dự án và Câu lạc bộ Media giúp mình rèn luyện từ tư duy sáng tạo, khả năng quay dựng đến kỹ năng làm việc nhóm.
+                        Các vai trò dưới đây tập trung vào sáng tạo nội dung, điều phối, nghiên cứu và đối ngoại — những kỹ năng có thể chuyển hóa sang công việc Booking.
                     </p>
                 </div>
 
@@ -446,33 +485,45 @@
                                 <h3 class="timeline-role">Trưởng nhóm Dự án</h3>
                                 <p class="timeline-org">Cuộc thi MIS TALENT</p>
                             </div>
-                            <div class="timeline-date">07/2026</div>
+                            <div class="timeline-date">06/2026</div>
                         </div>
-                        <p class="timeline-copy">Lên ý tưởng, thiết kế kịch bản chi tiết, phân cảnh và trực tiếp dựng hình ảnh cho video TVC giới thiệu Trợ lý ảo AI ngành ngân hàng.</p>
+                        <p class="timeline-copy">Lên ý tưởng, thiết kế kịch bản chi tiết và phân cảnh cho video TVC giới thiệu Trợ lý ảo AI ngành ngân hàng; điều phối thành viên, phân chia công việc và bám sát tiến độ sản xuất.</p>
                     </article>
 
                     <article class="timeline-item reveal">
                         <span class="timeline-dot"></span>
                         <div class="timeline-top">
                             <div>
-                                <h3 class="timeline-role">CTV Multimedia</h3>
-                                <p class="timeline-org">TEDxFTU 2025</p>
+                                <h3 class="timeline-role">Dự án Buddy Hub</h3>
+                                <p class="timeline-org">Marwuy</p>
                             </div>
-                            <div class="timeline-date">07/2025</div>
+                            <div class="timeline-date">11/2025 – 02/2026</div>
                         </div>
-                        <p class="timeline-copy">Tham gia lên ý tưởng đa nền tảng cho sự kiện. Lên kịch bản và thực hiện edit cho repurposing video từ bài nói của các diễn giả.</p>
+                        <p class="timeline-copy">Tổ chức training chia sẻ kinh nghiệm ứng dụng tự động hóa quy trình và quản lý tiến độ; thiết lập hệ thống theo dõi thông tin rõ ràng, rành mạch.</p>
                     </article>
 
                     <article class="timeline-item reveal">
                         <span class="timeline-dot"></span>
                         <div class="timeline-top">
                             <div>
-                                <h3 class="timeline-role">Ban Truyền thông & Kỹ thuật</h3>
-                                <p class="timeline-org">Sự kiện Sea of Hope</p>
+                                <h3 class="timeline-role">Trưởng nhóm Nghiên cứu khoa học</h3>
+                                <p class="timeline-org">Nhóm nghiên cứu</p>
                             </div>
-                            <div class="timeline-date">03/2025</div>
+                            <div class="timeline-date">09/2025 – 03/2026</div>
                         </div>
-                        <p class="timeline-copy">Hoạt động lên ý tưởng bài viết và trực tiếp tham gia chụp ảnh Live-update bám sát các khoảnh khắc tại sự kiện chính.</p>
+                        <p class="timeline-copy">Xây dựng dàn ý, phân chia và đốc thúc tiến độ cho nhóm 12 thành viên; tổng hợp, phân tích thông tin và trình bày báo cáo.</p>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-top">
+                            <div>
+                                <h3 class="timeline-role">Ban Đối ngoại &amp; Truyền thông</h3>
+                                <p class="timeline-org">CLB Tranh biện Bách Khoa</p>
+                            </div>
+                            <div class="timeline-date">09/2024 – 06/2025</div>
+                        </div>
+                        <p class="timeline-copy">Liên hệ khách mời/đối tác cho 02 sự kiện lớn; theo sát quá trình hợp tác và đảm bảo các bên thực hiện đúng quyền lợi, nghĩa vụ truyền thông.</p>
                     </article>
 
                     <article class="timeline-item reveal">
@@ -482,33 +533,21 @@
                                 <h3 class="timeline-role">Leader / Sub-Leader Ban Nội dung</h3>
                                 <p class="timeline-org">CLB Truyền thông VE MEDIA</p>
                             </div>
-                            <div class="timeline-date">2024–2025</div>
+                            <div class="timeline-date">2024–2026</div>
                         </div>
-                        <p class="timeline-copy">Tham gia sản xuất nội dung đa phương tiện. Thiết kế timeline, kịch bản chi tiết cho sự kiện Giáng Sinh 2024 và sự kiện Tuyển Thành viên F14.</p>
+                        <p class="timeline-copy">Lên ý tưởng chủ đạo, thiết kế timeline và kịch bản chi tiết cho dự án Giáng Sinh 2024 và sự kiện Tuyển Thành Viên F14; phối hợp triển khai nội dung theo tiến độ.</p>
                     </article>
 
                     <article class="timeline-item reveal">
                         <span class="timeline-dot"></span>
                         <div class="timeline-top">
                             <div>
-                                <h3 class="timeline-role">Ban Sáng tạo & Ban Chủ nhiệm</h3>
-                                <p class="timeline-org">CLB Nhiếp ảnh Chụp Choẹt CHG</p>
+                                <h3 class="timeline-role">Lễ tân &amp; Barista</h3>
+                                <p class="timeline-org">Kinh nghiệm vận hành F&amp;B</p>
                             </div>
-                            <div class="timeline-date">2021–2024</div>
+                            <div class="timeline-date">Thực tiễn F&amp;B</div>
                         </div>
-                        <p class="timeline-copy">Trực tiếp lên ý tưởng và thực hiện các concept ảnh, video cho CLB. Tham gia tổ chức và quay dựng sự kiện tại trường và khu vực.</p>
-                    </article>
-                    
-                    <article class="timeline-item reveal">
-                        <span class="timeline-dot"></span>
-                        <div class="timeline-top">
-                            <div>
-                                <h3 class="timeline-role">Ban Đối ngoại & Truyền thông</h3>
-                                <p class="timeline-org">CLB Tranh biện Bách Khoa</p>
-                            </div>
-                            <div class="timeline-date">2024–2025</div>
-                        </div>
-                        <p class="timeline-copy">Làm việc với khách mời, đối tác cho 02 sự kiện lớn; đảm bảo các bên thực hiện đúng quyền lợi và nghĩa vụ truyền thông như đã cam kết.</p>
+                        <p class="timeline-copy">Trực tiếp đứng quầy pha chế, hiểu khẩu vị và thói quen tiêu dùng của tệp khách hàng trẻ; hiểu biết thực tế về sản phẩm F&amp;B.</p>
                     </article>
                 </div>
             </div>
@@ -518,67 +557,67 @@
             <div class="wrap">
                 <div class="section-head reveal">
                     <div>
-                        <div class="section-kicker">03 · Dự án tiêu biểu</div>
-                        <h2 class="section-title">Những ấn phẩm <em>đã làm</em>.</h2>
+                        <div class="section-kicker">03 · Minh chứng</div>
+                        <h2 class="section-title">Những thứ mình <em>đã làm</em>.</h2>
                     </div>
                     <p class="section-intro">
-                        Một số trích đoạn kịch bản, quy trình sản xuất và hình ảnh tham gia Media. Nhấn vào từng thẻ để xem ảnh lớn.
+                        Một số trích đoạn sản phẩm, timeline và chứng nhận tiêu biểu. Nhấn vào từng thẻ để xem ảnh lớn.
                     </p>
                 </div>
 
                 <div class="work-grid">
-                    <article class="work-card reveal" onclick="openModal('/mis-talent.png','Kịch bản & Dựng Video TVC — MIS TALENT')">
+                    <article class="work-card reveal" onclick="openModal('assets/mis-talent.png','Kịch bản & Brief Video TVC — MIS TALENT')">
                         <div class="work-image">
-                            <img src="/mis-talent.png" alt="Kịch bản MIS TALENT">
-                            <div class="work-overlay"><span class="pill">Click để xem full</span><span class="pill">Quay & Dựng</span></div>
+                            <img src="assets/mis-talent.png" alt="Kịch bản MIS TALENT">
+                            <div class="work-overlay"><span class="pill">Click để xem full</span><span class="pill">Content</span></div>
                         </div>
                         <div class="work-copy">
-                            <div class="work-label">01 · Quay Dựng / Biên tập</div>
-                            <h3 class="work-title">Kịch bản & Dựng TVC AI</h3>
-                            <p>Phân rã kịch bản chi tiết từ hook, góc máy, twist đến hậu kỳ dựng phân cảnh TVC "Hiệp Sĩ Số".</p>
-                            <div class="work-mini"><span>Edit Video</span><span>Story Flow</span><span>Kịch bản</span></div>
+                            <div class="work-label">01 · Sáng tạo / Briefing</div>
+                            <h3 class="work-title">Kịch bản &amp; Brief Video TVC</h3>
+                            <p>Thiết kế kịch bản chi tiết cho video “Hiệp Sĩ Số”, từ hook, twist đến yêu cầu góc máy.</p>
+                            <div class="work-mini"><span>Script</span><span>Story flow</span><span>Briefing</span></div>
                         </div>
                     </article>
 
-                    <article class="work-card reveal" onclick="openModal('/timeline-giang-sinh.png','Quy trình sản xuất Media Giáng Sinh 2024 — VE MEDIA')">
+                    <article class="work-card reveal" onclick="openModal('assets/timeline-giang-sinh.png','Timeline Giáng Sinh 2024 — VE MEDIA')">
                         <div class="work-image">
-                            <img src="/timeline-giang-sinh.png" alt="Timeline Giáng Sinh 2024">
-                            <div class="work-overlay"><span class="pill">Click để xem full</span><span class="pill">Media Planning</span></div>
+                            <img src="assets/timeline-giang-sinh.png" alt="Timeline Giáng Sinh 2024">
+                            <div class="work-overlay"><span class="pill">Click để xem full</span><span class="pill">Project planning</span></div>
                         </div>
                         <div class="work-copy">
-                            <div class="work-label">02 · Quản lý kế hoạch</div>
-                            <h3 class="work-title">Timeline Sản xuất Media</h3>
-                            <p>Hệ thống theo dõi các ấn phẩm (Ảnh, Video), quản lý deadline sản xuất và duyệt hậu kỳ phối hợp với team.</p>
-                            <div class="work-mini"><span>Timeline</span><span>Coordination</span><span>Sản xuất</span></div>
+                            <div class="work-label">02 · Quản lý tiến độ</div>
+                            <h3 class="work-title">Hệ thống quản lý chiến dịch</h3>
+                            <p>Thiết lập Topic, Brief, Kênh đăng và Deadline để đội nhóm bám sát tiến độ triển khai.</p>
+                            <div class="work-mini"><span>Timeline</span><span>Deadline</span><span>Coordination</span></div>
                         </div>
                     </article>
 
-                    <article class="work-card reveal" onclick="openModal('/ve-media-profile.jpg','Sản xuất Nội dung Đa phương tiện — VE MEDIA')">
+                    <article class="work-card reveal" onclick="openModal('assets/ve-media-profile.jpg','Minh chứng Sub-Leader — VE MEDIA')">
                         <div class="work-image">
                             <div class="slide-wrap" id="ve-slides">
-                                <div class="slide-item active"><img src="/ve-media-profile.jpg" alt="VE MEDIA"></div>
-                                <div class="slide-item"><img src="/sea-of-hope.jpg" alt="Sea Of Hope 2025"></div>
+                                <div class="slide-item active"><img src="assets/ve-media-profile.jpg" alt="VE MEDIA"></div>
+                                <div class="slide-item"><img src="assets/sea-of-hope.jpg" alt="Sea Of Hope 2025"></div>
                             </div>
-                            <div class="work-overlay"><span class="pill">Tự động chuyển 2,5s</span><span class="pill">Nội dung Đa nền tảng</span></div>
+                            <div class="work-overlay"><span class="pill">Tự động chuyển 2,5s</span><span class="pill">VE MEDIA</span></div>
                         </div>
                         <div class="work-copy">
-                            <div class="work-label">03 · Sáng tạo Nội dung</div>
-                            <h3 class="work-title">VE MEDIA & Sea Of Hope</h3>
-                            <p>Sáng tạo nội dung ảnh/video ngắn tại VE Media và trực tiếp chụp ảnh Live-update tại Sea Of Hope.</p>
-                            <div class="work-mini"><span>Chụp ảnh</span><span>Live-update</span><span>Concept</span></div>
+                            <div class="work-label">03 · Truyền thông / tổ chức</div>
+                            <h3 class="work-title">VE MEDIA &amp; Sea Of Hope</h3>
+                            <p>Minh chứng hoạt động tại VE Media và Sea Of Hope 2025 trong các vai trò nội dung, tổ chức và phối hợp truyền thông.</p>
+                            <div class="work-mini"><span>Content</span><span>Event</span><span>Teamwork</span></div>
                         </div>
                     </article>
 
-                    <article class="work-card reveal" onclick="openModal('/cert-doi-ngoai.jpg','Kỹ năng phối hợp Đối tác / Truyền thông')">
+                    <article class="work-card reveal" onclick="openModal('assets/cert-doi-ngoai.jpg','Chứng nhận Leader Ban Đối ngoại — Quack Debate Camp')">
                         <div class="work-image">
-                            <img src="/cert-doi-ngoai.jpg" alt="Chứng nhận Đối ngoại">
-                            <div class="work-overlay"><span class="pill">Click để xem full</span><span class="pill">Soft Skills</span></div>
+                            <img src="assets/cert-doi-ngoai.jpg" alt="Chứng nhận Đối ngoại">
+                            <div class="work-overlay"><span class="pill">Click để xem full</span><span class="pill">External Relations</span></div>
                         </div>
                         <div class="work-copy">
-                            <div class="work-label">04 · Phối hợp & Triển khai</div>
-                            <h3 class="work-title">Làm việc với Đối tác</h3>
-                            <p>Ghi nhận kinh nghiệm giao tiếp, làm việc cùng các bên liên quan để đảm bảo luồng công việc truyền thông suôn sẻ.</p>
-                            <div class="work-mini"><span>Giao tiếp</span><span>Teamwork</span><span>Linh hoạt</span></div>
+                            <div class="work-label">04 · Đối ngoại</div>
+                            <h3 class="work-title">Leader Ban Đối ngoại</h3>
+                            <p>Chứng nhận ghi nhận vai trò Leader External Relations Department tại Quack Debate Camp 2025.</p>
+                            <div class="work-mini"><span>Communication</span><span>Negotiation</span><span>Partner care</span></div>
                         </div>
                     </article>
                 </div>
@@ -586,25 +625,25 @@
                 <div style="height:26px"></div>
 
                 <div class="cert-grid">
-                    <div class="cert reveal" onclick="openModal('/NCKH.jpg','Giải Ba Nghiên cứu Khoa học Sinh viên Cấp Khoa')">
-                        <img src="/NCKH.jpg" alt="Giải NCKH">
+                    <div class="cert reveal" onclick="openModal('assets/cert-aiesec.jpg','Heading for the Future — Business Development of AIESEC in Vietnam')">
+                        <img src="assets/cert-aiesec.jpg" alt="Chứng nhận AIESEC">
                         <div class="cert-copy">
-                            <h4>Nghiên cứu Khoa học (2026)</h4>
-                            <p>Giải Ba NCKH Cấp Khoa</p>
+                            <h4>AIESEC — Business Development</h4>
+                            <p>Heading for the Future · 2025</p>
                         </div>
                     </div>
-                    <div class="cert reveal" onclick="openModal('/sea-of-hope.jpg','Sea Of Hope 2025 — Chứng nhận thành viên')">
-                        <img src="/sea-of-hope.jpg" alt="Chứng nhận Sea Of Hope">
+                    <div class="cert reveal" onclick="openModal('assets/sea-of-hope.jpg','Sea Of Hope 2025 — Chứng nhận thành viên Ban Nội dung')">
+                        <img src="assets/sea-of-hope.jpg" alt="Chứng nhận Sea Of Hope">
                         <div class="cert-copy">
                             <h4>Sea Of Hope 2025</h4>
-                            <p>Ban Truyền thông & Kỹ thuật</p>
+                            <p>Thành viên Ban Nội dung</p>
                         </div>
                     </div>
-                    <div class="cert reveal" onclick="openModal('/LWL.jpg','Quán quân Tranh biện toàn quốc LWL')">
-                        <img src="/LWL.jpg" alt="Quán quân LWL">
+                    <div class="cert reveal" onclick="openModal('assets/cert-doi-ngoai.jpg','Quack Debate Camp 2025 — External Relations')">
+                        <img src="assets/cert-doi-ngoai.jpg" alt="Chứng nhận Quack Debate Camp">
                         <div class="cert-copy">
-                            <h4>Tranh biện LWL (2023)</h4>
-                            <p>Quán quân toàn quốc</p>
+                            <h4>Quack Debate Camp 2025</h4>
+                            <p>Leader External Relations Department</p>
                         </div>
                     </div>
                 </div>
@@ -615,14 +654,15 @@
             <div class="wrap">
                 <div class="cta-wrap reveal">
                     <div>
-                        <div class="cta-kicker">04 · Let's create together</div>
-                        <h2 class="cta-title">Tư duy linh hoạt. Bắt trend mượt mà.</h2>
+                        <div class="cta-kicker">04 · Let's work together</div>
+                        <h2 class="cta-title">Một brief rõ ràng. Một cuộc trò chuyện thú vị.</h2>
                         <p class="cta-copy">
-                            Mình đã sẵn sàng chiếc laptop cá nhân cùng tinh thần cầu tiến nhất để tham gia quay dựng, phối hợp cùng team Content và ra lò những thước phim truyền thông mang tính chuyển đổi cao.
+                            Mình sẵn sàng tham gia vào những đầu việc cần sự chủ động, giao tiếp, theo sát tiến độ
+                            và tinh thần học nhanh — đặc biệt ở Booking, Content và Marketing.
                         </p>
                         <div class="cta-buttons">
                             <a class="btn btn-primary" href="mailto:hoangquynhlien06@gmail.com">Gửi email ↗</a>
-                            <a class="btn btn-secondary" href="/CV_Hoang_Quynh_Lien_EditorParttime_2.pdf" target="_blank">Xem CV ↗</a>
+                            <a class="btn btn-secondary" href="assets/CV_Hoang_Quynh_Lien.pdf" target="_blank">Xem CV ↗</a>
                         </div>
                     </div>
 
@@ -652,7 +692,7 @@
     <footer>
         <div class="wrap footer-inner">
             <div class="footer-brand">Quỳnh Liên.</div>
-            <div>Portfolio · Media / Editor Video Part-time · 2026</div>
+            <div>Portfolio · Booking / Content / Marketing · 2026</div>
         </div>
     </footer>
 
